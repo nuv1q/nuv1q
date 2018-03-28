@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Module app</title>
+  
+  <link href="css/mocha.css" rel="stylesheet" />
+
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./lib/mocha.js"></script>
+  <script src="./lib/chai.js"></script>
+  <script>
+  	mocha.setup('bdd');
+  	var assert = chai.assert;
+  </script>
+  <script src="./modules/credit_registration/credit_registration.js"></script>
+  <script src="./modules/credit_registration/credit_registration.spec.js"></script>
+
+  <script src="./app.js"></script>
+ </head>
+ <body>
+ 	Для того, чтобы запустить тесты, нажми на кнопку <button onclick="app.spec.start()">Жми</button>
+ 	<div id="mocha"></div>
+  <div id="result"></div>
+ </body>
+</html>
